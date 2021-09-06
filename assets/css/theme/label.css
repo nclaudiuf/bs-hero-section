@@ -1,3 +1,8 @@
+label {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+}
+
 .labeltext-animated-secondary {
 	--text: #313131;
 	--shadow: 0 2px 8px -1px rgba(49, 49, 49, 0.32);

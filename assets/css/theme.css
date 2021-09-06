@@ -37,6 +37,8 @@
 @import './theme/grid.css';
 @import './theme/label.css';
 @import './theme/modal.css';
+@import './theme/media.css';
+@import './theme/sizes.css';
 @import './theme/navbar.css';
 @import './theme/tokens.css';
 @import './theme/typo.css';
