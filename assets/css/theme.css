@@ -1,9 +1,7 @@
 @charset "UTF-8"; /*
 ! Custom Theme Developed by Claudiu Furca
----------------Forked & Credits ❤️ -------------------
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
+--------------- Credits -------------------
+ * Bootstrap v5.1 (https://getbootstrap.com/)
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
@@ -33,6 +31,16 @@
 	--warning: #ffd717;
 	--danger: #f46363;
 }
+
+@import './theme/utils.css';
+@import './theme/buttons.css';
+@import './theme/grid.css';
+@import './theme/label.css';
+@import './theme/modal.css';
+@import './theme/navbar.css';
+@import './theme/tokens.css';
+@import './theme/typo.css';
+@import './theme/calendly-widget.css';
 
 *,
 ::after,
