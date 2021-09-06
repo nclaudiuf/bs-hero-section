@@ -11,7 +11,7 @@
 		"css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o dist/",
 		"css-lint": "stylelint scss/",
 		"css-prefix": "postcss --replace assets/css/section.css --use autoprefixer --map",
-		"css-purge": "purgecss --keyframes --css assets/css/section.css --content index.html assets/js/main.js \"node_modules/bootstrap/js/dist/{modal,collapse,dropdown}.js\" --output dist/",
+		"css-purge": "purgecss --keyframes --css assets/css/section.css --content index.html \"node_modules/bootstrap/js/dist/{modal,collapse,dropdown}.js\" --output dist/",
 		"css": "npm-run-all css-compile css-prefix",
 		"start": "parcel index.html --open",
 		"build": "parcel build index.html",
