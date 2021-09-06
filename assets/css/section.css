@@ -1,6 +1,8 @@
 @import './navbar.css';
 @import './hero.css';
 @import './labeltext.css';
+@import './icon.css';
+@import './utils.css';
 @import './calendly-widget.css';
 
 *:hover {
