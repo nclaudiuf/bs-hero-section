@@ -1,0 +1,25 @@
+@import './theme.css';
+@import './navbar.css';
+@import './hero.css';
+@import './labeltext.css';
+@import './calendly-widget.css';
+
+*:hover {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: opaallcity 0.3s ease;
+}
+
+body {
+	height: 60vh !important;
+}
+
+.bg-light {
+	background-color: #fafafa !important;
+}
+
+a.hover-effect:hover,
+img.hover-effect:hover,
+button.hover-effect:hover {
+	opacity: 0.7 !important;
+}

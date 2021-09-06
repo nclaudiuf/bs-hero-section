@@ -16,7 +16,7 @@
 import '../../node_modules/bootstrap/js/dist/modal.js';
 import '../../node_modules/bootstrap/js/dist/collapse.js';
 import '../../node_modules/bootstrap/js/dist/dropdown.js';
-import '../../scss/bs-config.scss';
+import '../../scss/theme.scss';
 import lozad from 'lozad';
 
 StyleModalCard();
