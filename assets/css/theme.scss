@@ -1,0 +1,66 @@
+@charset "UTF-8"; /*
+! Custom Theme Developed by Claudiu Furca
+--------------- Credits -------------------
+ * Bootstrap v5.1 (https://getbootstrap.com/)
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+:root {
+	--blue: #305edb;
+	--indigo: #2f20ed;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #f46363;
+	--orange: #fd7e14;
+	--yellow: #ffd717;
+	--green: #14b777;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--neutral-dark: #a3a3a3;
+	--neutral: #cccccc;
+	--neutral-light: #e5e5e5;
+	--white: #fff;
+	--light: #fbfcfd;
+	--dark: #121212;
+	--primary: #ffd717;
+	--primary-light: #ffdc34;
+	--secondary: #313131;
+	--secondary-light: #5a5a5a;
+	--success: #14b777;
+	--info: #17a2b8;
+	--warning: #ffd717;
+	--danger: #f46363;
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-kerning: auto;
+	-webkit-text-size-adjust: 100%;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+}
+*:focus {
+	box-shadow: none !important;
+	outline: none;
+}
+
+@import './components/colors.scss';
+@import './components/typo.scss';
+@import './components/flexbox.scss';
+@import './components/spacing.scss';
+@import './components/utils.scss';
+@import './components/sizes.scss';
+@import './components/tokens.scss';
+@import './components/media.scss';
+@import './components/navbar.scss';
+@import './components/buttons.scss';
+@import './components/nav.scss';
+@import './components/modal.scss';
+@import './components/label.scss';
+@import './components/calendly-widget.scss';
