@@ -4,21 +4,14 @@
   "private": true,
   "description": "",
   "author": "@nclaudiuf",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nclaudiuf/bootstrap-sandbox-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/nclaudiuf/bootstrap-sandbox-template/issues"
-  },
-  "homepage": "https://github.com/nclaudiuf/bootstrap-sandbox-template#readme",
+  "license": "ISC",
+  "homepage": "https://claudiu.design",
   "scripts": {
     "build:css": "npm run css",
     "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o dist/",
     "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
-    "css-purge": "purgecss --keyframes --css assets/css/starter.css --content index.html \"node_modules/bootstrap/js/dist/{modal}.js\" --output dist/",
+    "css-purge": "purgecss --keyframes --css assets/css/theme.css --content index.html \"node_modules/bootstrap/js/dist/{modal,collapse,dropdown}.js\" --output dist/",
     "css": "npm-run-all css-compile css-prefix",
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
