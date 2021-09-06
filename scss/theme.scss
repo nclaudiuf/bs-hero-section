@@ -45,7 +45,24 @@ $danger: #f46363;
 $blue: #305edb;
 $indigo: #2f20ed;
 
-//  Typography
+$font-family-sans-serif:
+  // Cross-platform generic font family (default user interface font)
+  system-ui,
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Windows
+  "Montserrat",
+  // Android
+  Montserrat,
+  // Basic web fallback
+  "Helvetica Neue", Arial,
+  // Linux
+  "Montserrat",
+  "Montserrat",
+  // Sans serif fallback
+  sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 // Utils
 $border-radius: 0.5;
