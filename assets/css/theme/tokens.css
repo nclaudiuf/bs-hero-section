@@ -1,6 +1,5 @@
 html {
 	font-family: 'Montserrat', sans-serif;
-	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -10,9 +9,8 @@ body {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #121212;
 	text-align: left;
-	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .rounded-sm {
@@ -57,4 +55,32 @@ body {
 
 .rounded-0 {
 	border-radius: 0 !important;
+}
+
+div.rounded,
+img.rounded {
+	border-radius: 0.625rem !important;
+}
+
+.rounded-sm,
+img.rounded-sm {
+	border-radius: 0.3125rem !important;
+}
+
+.col-lg-3 .list-articles img {
+	min-height: 3.75rem;
+	object-fit: cover;
+}
+
+.col-lg-3 .list-articles img.rounded {
+	border-radius: 0.3125rem !important;
+}
+
+.col-lg-4 .list-articles img {
+	min-height: 6.75rem;
+	object-fit: cover;
+}
+
+.col-lg-4 .list-articles img.rounded {
+	border-radius: 0.3125rem !important;
 }

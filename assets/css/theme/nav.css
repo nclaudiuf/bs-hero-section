@@ -1,0 +1,39 @@
+.nav-link.btn.active {
+	background: #ffd717;
+	color: #fbfcfd;
+}
+.nav-link.btn-light.active,
+.nav-link.btn-light:active {
+	background: #fbfcfd !important;
+	border-color: #dee2e6 !important;
+}
+.nav-link.btn-light:not(.active) {
+	background: 0 0;
+	border-color: transparent;
+}
+.nav-link.btn-light .icon * {
+	fill: #ffd717;
+}
+.nav-link .icon-round {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.75rem;
+}
+.nav-link:not(.active):not(:active) .icon-round {
+	background-color: transparent !important;
+}
+.nav.flex-column {
+	flex-flow: column;
+}
+.nav.flex-column .nav-link {
+	padding-left: 0;
+	padding-top: 0;
+}
+.nav-link[data-toggle='collapse'] > .icon {
+	transform: rotateZ(-90deg);
+	position: relative;
+	right: 0.25rem;
+}
+.nav-link.disabled {
+	opacity: 0.25;
+}
