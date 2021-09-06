@@ -2,8 +2,8 @@
 	"name": "bs-hero-section",
 	"version": "1.0.0",
 	"private": true,
-	"description": "",
-	"author": "@nclaudiuf",
+	"description": "Website - Hero Section",
+	"author": "Claudiu N. Furca https://claudiu.design",
 	"license": "ISC",
 	"homepage": "https://claudiu.design",
 	"scripts": {
@@ -14,7 +14,8 @@
 		"css-purge": "purgecss --keyframes --css assets/css/section.css --content index.html \"node_modules/bootstrap/js/dist/{modal,collapse,dropdown}.js\" --output dist/",
 		"css": "npm-run-all css-compile css-prefix",
 		"start": "parcel index.html --open",
-		"build": "parcel build index.html"
+		"build": "parcel build index.html",
+		"watch": "nodemon -e html,scss -x \"npm run css\""
 	},
 	"dependencies": {
 		"@parcel/transformer-image": "2.0.0-rc.0",
