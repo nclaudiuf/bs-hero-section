@@ -50,17 +50,18 @@
 	outline: none;
 }
 
+@import '../../scss/bootstrap.scss';
+@import './components/flexbox.scss';
+// @import './components/sizes.scss';
 @import './components/colors.scss';
 @import './components/typo.scss';
-@import './components/flexbox.scss';
 @import './components/spacing.scss';
 @import './components/utils.scss';
-@import './components/sizes.scss';
 @import './components/tokens.scss';
 @import './components/media.scss';
 @import './components/navbar.scss';
+@import './components/dropdown.scss';
 @import './components/buttons.scss';
-@import './components/nav.scss';
 @import './components/modal.scss';
 @import './components/label.scss';
 @import './components/calendly-widget.scss';

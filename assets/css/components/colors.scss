@@ -1,3 +1,28 @@
+a {
+	color: #313131;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+a:hover {
+	color: #4b4b4b;
+	text-decoration: none;
+}
+
+a:not([href]) {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:not([href]):hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+.bg-light {
+	background-color: #fafafa !important;
+}
+
 .bg-primary {
 	background-color: #ffd717 !important;
 }
@@ -362,4 +387,25 @@ a.text-secondary-light:hover {
 .highlight {
 	display: inline;
 	background: rgba(255, 142, 136, 0.2);
+}
+
+@media only screen and (max-width: 767.9px) {
+	a.text-secondary:hover,
+	button.text-secondary:hover,
+	a.text-secondary:focus,
+	button.text-secondary:focus {
+		color: var(--secondary-light) !important;
+	}
+	a.text-secondary-light:hover,
+	button.text-secondary-light:hover,
+	a.text-secondary-light:focus,
+	button.text-secondary-light:focus {
+		color: var(--neutral-dark) !important;
+	}
+	a.text-dark:hover,
+	button.text-dark:hover,
+	a.text-dark:focus,
+	button.text-dark:focus {
+		color: var(--secondary-light) !important;
+	}
 }

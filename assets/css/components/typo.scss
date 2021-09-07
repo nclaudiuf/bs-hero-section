@@ -1,3 +1,12 @@
+
+body,
+code,
+kbd,
+pre,
+samp {
+	font-family: 'Montserrat', sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -10,11 +19,11 @@ h6,
 .h4,
 .h5,
 .h6 {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 	font-weight: 500;
-	line-height: 1.2;
-	margin-top: 0;
-	font-family: inherit;
+	line-height: 1.5;
+	margin-top: 1rem;
+	font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -88,13 +97,6 @@ h6,
 		font-weight: 600;
 		line-height: 1.2;
 	}
-}
-
-hr {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	border: 0;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 small,

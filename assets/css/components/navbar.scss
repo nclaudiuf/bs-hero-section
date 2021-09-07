@@ -1,4 +1,44 @@
 /* Navbar */
+.nav-link.btn.active {
+	background: #ffd717;
+	color: #fbfcfd;
+}
+.nav-link.btn-light.active,
+.nav-link.btn-light:active {
+	background: #fbfcfd !important;
+	border-color: #dee2e6 !important;
+}
+.nav-link.btn-light:not(.active) {
+	background: 0 0;
+	border-color: transparent;
+}
+.nav-link.btn-light .icon * {
+	fill: #ffd717;
+}
+.nav-link .icon-round {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.75rem;
+}
+.nav-link:not(.active):not(:active) .icon-round {
+	background-color: transparent !important;
+}
+.nav.flex-column {
+	flex-flow: column;
+}
+.nav.flex-column .nav-link {
+	padding-left: 0;
+	padding-top: 0;
+}
+.nav-link[data-toggle='collapse'] > .icon {
+	transform: rotateZ(-90deg);
+	position: relative;
+	right: 0.25rem;
+}
+.nav-link.disabled {
+	opacity: 0.25;
+}
+
 .navbar-brand .avatar {
 	width: 60%;
 }
@@ -75,43 +115,6 @@
 	.navbar-light .navbar-toggler-icon {
 		background: none;
 	}
-	a.text-secondary:hover,
-	button.text-secondary:hover,
-	a.text-secondary:focus,
-	button.text-secondary:focus {
-		color: var(--secondary-light) !important;
-	}
-	a.text-secondary-light:hover,
-	button.text-secondary-light:hover,
-	a.text-secondary-light:focus,
-	button.text-secondary-light:focus {
-		color: var(--neutral-dark) !important;
-	}
-	a.text-dark:hover,
-	button.text-dark:hover,
-	a.text-dark:focus,
-	button.text-dark:focus {
-		color: var(--secondary-light) !important;
-	}
-	.dropdown-menu .dropdown-menu {
-		margin-left: 0.7rem;
-		margin-right: 0.7rem;
-		margin-bottom: 0.5rem;
-	}
-
-	a.dropdown-toggle:after {
-		display: inline-flex !important;
-		margin-left: 0.255em;
-		content: '';
-		border-top: 0.3em solid;
-		border-left: 0.3em solid transparent;
-		border-bottom: 0;
-		border-right: 0.3em solid transparent;
-	}
-
-	a.dropdown-toggle:after {
-		border-top-color: var(--secondary-light) !important;
-	}
 }
 
 .navbar {
@@ -144,10 +147,6 @@
 .navbar[data-overlay].scrolled,
 .navbar[data-sticky='top'].scrolled {
 	z-index: 1030;
-}
-
-.navbar .dropdown-menu {
-	z-index: 1060;
 }
 
 .navbar .nav-link {

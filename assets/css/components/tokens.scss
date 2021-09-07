@@ -13,74 +13,18 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.rounded-sm {
-	border-radius: 0.2rem !important;
+.shadow-sm {
+	box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.05) !important;
 }
 
-.rounded {
-	border-radius: 0.4rem !important;
+.shadow {
+	box-shadow: 0 0.625rem 1.5rem rgba(0, 0, 0, 0.08) !important;
 }
 
-.rounded-top {
-	border-top-left-radius: 0.4rem !important;
-	border-top-right-radius: 0.4rem !important;
+.shadow-lg {
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
-.rounded-right {
-	border-top-right-radius: 0.4rem !important;
-	border-bottom-right-radius: 0.4rem !important;
-}
-
-.rounded-bottom {
-	border-bottom-right-radius: 0.4rem !important;
-	border-bottom-left-radius: 0.4rem !important;
-}
-
-.rounded-left {
-	border-top-left-radius: 0.4rem !important;
-	border-bottom-left-radius: 0.4rem !important;
-}
-
-.rounded-lg {
-	border-radius: 0.3rem !important;
-}
-
-.rounded-circle {
-	border-radius: 50% !important;
-}
-
-.rounded-pill {
-	border-radius: 50rem !important;
-}
-
-.rounded-0 {
-	border-radius: 0 !important;
-}
-
-div.rounded,
-img.rounded {
-	border-radius: 0.625rem !important;
-}
-
-.rounded-sm,
-img.rounded-sm {
-	border-radius: 0.3125rem !important;
-}
-
-.col-lg-3 .list-articles img {
-	min-height: 3.75rem;
-	object-fit: cover;
-}
-
-.col-lg-3 .list-articles img.rounded {
-	border-radius: 0.3125rem !important;
-}
-
-.col-lg-4 .list-articles img {
-	min-height: 6.75rem;
-	object-fit: cover;
-}
-
-.col-lg-4 .list-articles img.rounded {
-	border-radius: 0.3125rem !important;
+.shadow-none {
+	box-shadow: none !important;
 }

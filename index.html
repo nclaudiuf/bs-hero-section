@@ -8,15 +8,11 @@
 		<meta name="author" content="Claudiu Furca" />
 		<title>Product & Service Design | Design Sprint</title>
 
-		<link defer href="scss/bootstrap.scss" rel="stylesheet">
 		<link async href="assets/css/theme.scss" rel="stylesheet">
-		<link async href="assets/css/section.scss" rel="stylesheet">
+		<link async href="assets/css/page.scss" rel="stylesheet">
 	</head>
 
 	<body class="min-vh-60">
-		<div class="loader change">
-			<div class="loading-animation"></div>
-		</div>
 
 		<div class="navbar-container">
 			<nav
@@ -24,8 +20,8 @@
 				data-overlay=""
 				data-sticky="top"
 			>
-				<div class="container-fluid pt-1 pb-1 pl-md-5 pl-2 pr-md-5 pr-2 d-flex flex-row justify-content-between">
-					<a class="navbar-brand hover-effect ml-1" href="https://claudiu.design" title="Home">
+				<div class="container-fluid pt-1 pb-1 ps-md-5 ps-2 pe-md-5 pe-2 d-flex flex-row justify-content-between">
+					<a class="navbar-brand hover-effect ms-1" href="https://claudiu.design" title="Home">
 						<img width="54" height="40"								
 							class="lozad"
 							data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630714421/Studio%20Branding/Logo%20/cf-logo-dark-1x_exzqmk.webp"
@@ -58,7 +54,7 @@
 					>
 						<div class="me-auto">
 							<ul class="navbar-nav mb-0 align-items-start">
-								<li class="mt-lg-1 mt-0 mb-2 nav-item dropdown mr-5">					
+								<li class="mt-lg-1 mt-0 mb-2 nav-item dropdown me-5">					
 									<a
 										href="https://claudiu.design/work-cases"
 										class="md-labeltext-animated labeltext-animated nav-link dropdown-toggle text-secondary text-uppercase fs-6"
@@ -72,7 +68,7 @@
 										<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/product-designs">Product Designs</a></li>
 									</ul>
 								</li>
-								<li class="d-flex flex-column mt-lg-1 mt-0 mb-2 nav-item dropdown mr-5">
+								<li class="d-flex flex-column mt-lg-1 mt-0 mb-2 nav-item dropdown me-5">
 										<a
 											href="https://claudiu.design/services"
 											class="nav-link dropdown-toggle text-secondary text-uppercase fs-6 md-labeltext-animated labeltext-animated"
@@ -106,7 +102,7 @@
 							</ul>
 						</div>
 
-					<hr class="dropdown-divider mt-1 mb-1 hide-sm">
+					<hr class="dropdown-divider mt-1 mb-1 d-none d-sm-block">
 
 					<button
 							type="button"
@@ -115,11 +111,11 @@
 							data-bs-toggle="modal"
 							data-bs-target="#cta-modal"
 						>
-							<span class="hide-md">👉</span> <span class="show-md">👉🏼</span> Get in Touch
+							<span class="d-none d-md-block">👉</span> <span class="d-md-none">👉🏼</span> Get in Touch
 					</button>
 
-					<div class="d-flex flex-column col social-wrapper show-sm ml-0 pl-0">
-						<ul class="d-flex pl-0">
+					<div class="d-flex flex-column col social-wrapper d-sm-none ms-0 ps-0">
+						<ul class="d-flex ps-0">
 							<li class="btn">
 								<a href="https://www.linkedin.com/in/claudiu-furca" class="text-secondary">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -177,7 +173,7 @@
 			class="d-flex flex-column justify-content-center mb-5 overflow-hidden"
 		>
 
-			<div class="social-wrapper position-absolute hide-sm">
+			<div class="social-wrapper position-absolute d-none d-sm-block">
 					<ul class="d-flex list-group">
 						<li class="btn">
 							<a href="https://www.linkedin.com/in/claudiu-furca" class="text-secondary-light">
@@ -238,13 +234,13 @@
 					>	
 						<div class="content container d-flex flex-column mt-3">
 							<h1 class="display-sm-2 display-3 fw-bold text-md-end text-center text-secondary user-select-none mt-md-3 mt-5 pt-sm-0 pt-4">
-								Grow <span class="shadow-effect hide-sm">Solid</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Solid</span> Products & Systems,
-								<span class="shadow-effect hide-sm">Faster.</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Faster.</span>
+								Grow <span class="shadow-effect d-none d-sm-block">Solid</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Solid</span> Products & Systems,
+								<span class="shadow-effect d-none d-sm-block">Faster.</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Faster.</span>
 							</h1>
 							<div class="mb-sm-5 mb-4 mt-sm-4 mt-2">
 								<p class="lead text-dark-50 user-select-none fw-normal">
 									I help startups, IoT and SaaS companies
-									<br class="hide-sm" />turn complex technologies
+									<br class="d-none d-sm-block" />turn complex technologies
 									into <span class="fw-bold">simple products and systems</span>, for humans.
 								</p>
 							</div>
