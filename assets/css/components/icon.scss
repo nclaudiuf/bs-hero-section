@@ -5,15 +5,18 @@
 }
 
 .icon.icon-md {
-	height: 2.25rem;
+	height: 2rem;
 }
 
 .icon.icon-lg {
 	height: 3rem;
 }
+.icon.icon-xl {
+	height: 4rem;
+}
 
 .icon.icon-sm {
-	height: 0.75rem;
+	height: 1rem;
 }
 
 .icon-round {
@@ -28,22 +31,6 @@
 
 .icon-round > .icon {
 	height: 2.25rem;
-}
-
-.icon-round.bg-primary {
-	background: rgba(55, 85, 190, 0.1) !important;
-}
-
-.icon-round.bg-primary-light {
-	background: rgba(255, 142, 136, 0.1) !important;
-}
-
-.icon-round.bg-secondary-light {
-	background: rgba(27, 31, 59, 0.1) !important;
-}
-
-.icon-round.bg-white {
-	background: rgba(255, 255, 255, 0.1) !important;
 }
 
 .icon-round.icon-round-xs {

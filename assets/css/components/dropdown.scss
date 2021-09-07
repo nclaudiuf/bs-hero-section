@@ -282,14 +282,3 @@
 	padding: 0.25rem 1.5rem;
 	color: rgba(255, 215, 23, 0.5);
 }
-
-.collapse:not(.show) {
-	display: none;
-}
-
-.collapsing {
-	position: relative;
-	height: 0;
-	overflow: hidden;
-	transition: height 0.35s ease;
-}

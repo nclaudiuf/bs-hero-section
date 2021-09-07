@@ -1,20 +1,3 @@
-figure {
-	margin: 0 0 1rem;
-}
-
-img[class*='flex-'][class*='-grow-1'] {
-	object-fit: cover;
-}
-
-img {
-	max-width: 100%;
-}
-
-svg {
-	overflow: hidden;
-	vertical-align: middle;
-}
-
 .image-collage {
 	position: relative;
 	display: flex;
