@@ -68,7 +68,7 @@ function Make3ShadowToText() {
 function getInTouch_Animation() {
 	const btn = document.getElementById('cta-btn');
 	const overlayImg = document.querySelector('img.content');
-	const textContent = document.querySelector('.container .content');
+	const textContent = document.querySelector('.hero .content');
 
 	if (textContent !== null && overlayImg !== null && btn !== null) {
 		btn.addEventListener('mouseenter', () => {
