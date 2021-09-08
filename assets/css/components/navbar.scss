@@ -1,106 +1,29 @@
-/* Navbar */
-.nav-link.btn.active {
-	background: #ffd717;
-	color: #fbfcfd;
+.navbar {width: 100%;}
+
+.navbar .nav-link, .navbar .nav-item {
+	font-weight: $navbar-toggler-font-weight;
 }
-.nav-link.btn-light.active,
-.nav-link.btn-light:active {
-	background: #fbfcfd !important;
-	border-color: #dee2e6 !important;
-}
+
+.navbar .dropdown, .navbar .dropdown a {font-size: $navbar-dropdown-font-size;}
+
 .nav-link.btn-light:not(.active) {
 	background: 0 0;
 	border-color: transparent;
 }
-.nav-link.btn-light .icon * {
-	fill: #ffd717;
-}
-.nav-link .icon-round {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0.75rem;
-}
-.nav-link:not(.active):not(:active) .icon-round {
-	background-color: transparent !important;
-}
-.nav.flex-column {
-	flex-flow: column;
-}
-.nav.flex-column .nav-link {
-	padding-left: 0;
-	padding-top: 0;
-}
+
 .nav-link[data-toggle='collapse'] > .icon {
 	transform: rotateZ(-90deg);
 	position: relative;
 	right: 0.25rem;
 }
-.nav-link.disabled {
-	opacity: 0.25;
-}
-
-.navbar-brand .avatar {
-	width: 60%;
-}
 
 .navbar-nav .dropdown ul li:hover {
-	background-color: #fbfcfd !important;
+	background-color: $light;
 }
 
 .navbar-nav li a,
 .dropdown-menu li a {
 	align-items: center;
-}
-
-@media all and (min-width: 768px) {
-	.navbar .dropdown-menu {
-		left: 0; /* position submenu card */
-		right: auto;
-	}
-	.navbar .nav-item .dropdown-menu {
-		display: block;
-		opacity: 0;
-		visibility: hidden;
-		transition: 0.3s;
-		margin-top: 0;
-	}
-	.navbar .nav-item:hover .nav-link {
-		color: var(--light);
-	}
-	.navbar .dropdown-menu.fade-down {
-		top: 80%;
-		transform: rotateX(-75deg);
-		transform-origin: 0% 0%;
-	}
-	.navbar .dropdown-menu.fade-up {
-		top: 180%;
-	}
-	.navbar .nav-item:hover .dropdown-menu {
-		transition: 0.3s;
-		opacity: 1;
-		visibility: visible;
-		top: 100%;
-		transform: rotateX(0deg);
-	}
-	.dropdown-menu li {
-		position: relative;
-	}
-	.nav-item .submenu {
-		display: none;
-		position: absolute;
-		left: 100%;
-		top: -7px;
-	}
-	.nav-item .submenu-left {
-		right: 100%;
-		left: auto;
-	}
-	.dropdown-menu > li:hover {
-		background-color: #f1f1f1;
-	}
-	.dropdown-menu > li:hover > .submenu {
-		display: block;
-	}
 }
 
 @media only screen and (max-width: 767.9px) {
@@ -117,64 +40,6 @@
 	}
 }
 
-.navbar {
-	border-bottom: 1px solid rgba(27, 31, 59, 0.08);
-	width: 100%;
-}
-
-.navbar[data-overlay] {
-	position: absolute;
-}
-
-.navbar[data-sticky='top'] {
-	transition: all 0.2s ease;
-}
-
-.navbar[data-sticky='top'].scrolled.navbar-dark {
-	background: #023047;
-	border-bottom-color: transparent;
-}
-
-.navbar[data-sticky='top'].scrolled.navbar-light {
-	background: #fbfcfd !important;
-}
-
-.navbar[data-overlay],
-.navbar[data-sticky='top'] {
-	z-index: 999;
-}
-
-.navbar[data-overlay].scrolled,
-.navbar[data-sticky='top'].scrolled {
-	z-index: 1030;
-}
-
-.navbar .nav-link {
-	transition: color 0.25s ease;
-}
-
-.navbar-container {
-	position: relative;
-}
-
-.navbar-light .navbar-toggler {
-	color: rgba(251, 252, 253, 0.65);
-	fill: #fbfcfd;
-}
-
-.navbar-dark {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.navbar-dark .navbar-toggler {
-	color: rgba(18, 18, 18, 0.65);
-	fill: #121212;
-}
-
-.navbar-dark.navbar-toggled-show .dropdown-toggle > svg.bg-dark * {
-	fill: #fbfcfd;
-}
-
 .navbar-toggler {
 	border: none;
 	position: relative;
@@ -185,62 +50,9 @@
 	transform: scale(0) rotate(45deg);
 }
 
-.navbar-toggler[aria-expanded='true'] .navbar-toggler-open {
-	opacity: 0;
-	transform: scale(0) rotate(-45deg);
-}
-
-.navbar-toggler-close,
-.navbar-toggler-open {
-	transition: opacity 0.2s ease, transform 0.2s ease;
-	opacity: 1;
-	transform: scale(1);
-}
-
-.navbar-toggler-close {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-@media (min-width: 992px) {
-	.navbar {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.navbar .dropdown-menu {
-		margin-top: 1rem;
-	}
-}
-
-nav[data-overlay].navbar-toggled-show {
-	background: #fbfcfd;
-}
-
-nav[data-overlay].navbar-toggled-show.navbar-dark {
-	background: #023047;
-}
-
-nav[data-overlay].navbar-toggled-show.navbar-dark .dropdown-item {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-nav[data-overlay].navbar-toggled-show.navbar-dark .dropdown-item:hover {
-	color: #fbfcfd;
-}
-
 @media (max-width: 991.98px) {
 	.navbar-collapse {
 		max-height: 100vh;
 		overflow-y: scroll;
-	}
-}
-
-@media (max-width: 991.98px) {
-	.nav-item.dropdown .col-auto {
-		width: 100%;
-		padding-left: 0;
-		padding-right: 0;
 	}
 }

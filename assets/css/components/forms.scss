@@ -1,3 +1,15 @@
+address {
+	margin-bottom: 1rem;
+	font-style: normal;
+	line-height: inherit;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
 .form-control {
 	display: block;
 	width: 100%;

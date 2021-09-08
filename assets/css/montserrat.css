@@ -38,7 +38,7 @@
 	font-family: 'Montserrat';
 	src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
 		url('subset-Montserrat-ExtraBold.woff2') format('woff2');
-	font-weight: bold;
+	font-weight: bolder;
 	font-style: normal;
 	font-display: swap;
 }
