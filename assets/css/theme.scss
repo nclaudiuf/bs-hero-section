@@ -28,22 +28,6 @@
 	text-decoration: none;
 }
 
-$enable-gradients: true;
-$enable-shadows: true;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-
-// Spacing
-$spacer: 1rem;
-
-// Utils
-$border-radius-sm: .25rem;
-$border-radius: .375rem;
-$border-radius-lg: .5rem;
-
-// Colors
 :root {
 	--neutral-dark: #a3a3a3;
 	--neutral: #cccccc;
@@ -61,6 +45,22 @@ $border-radius-lg: .5rem;
 	--indigo: #2f20ed;
 }
 
+$enable-gradients: true;
+$enable-shadows: true;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Spacing
+$spacer: 1rem;
+
+// Utils
+$border-radius-sm: .25rem;
+$border-radius: .375rem;
+$border-radius-lg: .5rem;
+
+// Colors
 $primary: #ffd717;
 $primary-light: #ffdc34;
 $secondary: #313131;
@@ -96,8 +96,8 @@ $font-size-lg: $font-size-base * 1.25;
 $font-size-xl: $font-size-base * 1.5;
 
 // Page Settings
-$body-color: #313131;
-$body-bg: #fbfcfd;
+$body-color: $secondary;
+$body-bg: $light;
 $body-bg: ease-gradient(
 	60deg,
 	rgba(251, 252, 253, 1),
@@ -140,7 +140,11 @@ $badge-color: $secondary-light;
 $badge-bg: $primary;
 $badge-font-weight: $font-weight-bolder;
 
+// Lead
+$lead-color: $secondary-light;
+$lead-font-weight: $font-weight-normal;
 
+/* Bootstrap */
 @import '../../scss/bootstrap.scss';
 
 /* Custom Styles */
@@ -151,7 +155,7 @@ $badge-font-weight: $font-weight-bolder;
 // @import './components/sisez.scss';
 @import './components/utils.scss';
 @import './components/shadows.scss';
-// @import './components/text.scss';
+@import './components/text.scss';
 // @import './components/text-helpers.scss';
 @import './components/buttons.scss';
 // @import './components/button-helpers.scss';
