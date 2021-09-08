@@ -18,11 +18,13 @@ import '../../node_modules/bootstrap/js/dist/collapse.js';
 import '../../node_modules/bootstrap/js/dist/dropdown.js';
 import lozad from 'lozad';
 
+window.onbeforeunload = () => window.scrollTo(0, 0);
+
 StyleModalCard();
 Make3ShadowToText();
 getInTouch_Animation();
 showSubMenu();
-setButtonAnimation();
+labelAnimation();
 
 const observer = lozad(); // lazy load
 observer.observe();
@@ -37,7 +39,7 @@ function StyleModalCard() {
 }
 
 function Make3ShadowToText() {
-	const hero = document.querySelectorAll('#hero')[0];
+	const hero = document.querySelectorAll('.hero')[0];
 	const walk = 32; // px
 
 	const allText = hero.querySelectorAll('span.shadow-effect');
@@ -66,7 +68,7 @@ function Make3ShadowToText() {
 function getInTouch_Animation() {
 	const btn = document.getElementById('cta-btn');
 	const overlayImg = document.querySelector('img.content');
-	const textContent = document.querySelector('.content.container');
+	const textContent = document.querySelector('.container .content');
 
 	if (textContent !== null && overlayImg !== null && btn !== null) {
 		btn.addEventListener('mouseenter', () => {
@@ -74,14 +76,15 @@ function getInTouch_Animation() {
 			overlayImg.classList.add('img--scaleUp');
 		});
 		btn.addEventListener('mouseleave', () => {
-			textContent.classList.add('content--Fallback');
+			overlayImg.classList.toggle('img--scaleUp');
+			textContent.classList.toggle('content--scaleDown');
+
 			overlayImg.classList.add('img--Fallback');
+			textContent.classList.add('content--Fallback');
 
 			setTimeout(() => {
 				textContent.classList.remove('content--Fallback');
 				overlayImg.classList.remove('img--Fallback');
-				textContent.classList.remove('content--scaleDown');
-				overlayImg.classList.remove('img--scaleUp');
 			}, 451);
 		});
 	}
@@ -120,14 +123,20 @@ function showSubMenu() {
 	}
 }
 
-function setButtonAnimation() {
-	document
-		.querySelectorAll('.labeltext-animated')
-		.forEach(
-			labelText =>
-				(labelText.innerHTML =
-					'<div><span>' +
-					labelText.textContent.trim().split('').join('</span><span>') +
-					'</span></div>')
-		);
+function labelAnimation() {
+	const labels = document.querySelectorAll('.label-animated');
+
+	if (labels !== undefined) {
+		labels.forEach(label => {
+			label.innerHTML =
+				'<div><span>' + label.textContent.trim('').split('').join('</span><span>');
+			label
+				.querySelectorAll('span')
+				.forEach(character =>
+					character.textContent === ' '
+						? character.classList.add('label-spacer')
+						: ''
+				);
+		});
+	}
 }
