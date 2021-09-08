@@ -94,6 +94,7 @@ $font-size-sm: $font-size-base * .875;
 $font-size-md: $font-size-base * 1.125;
 $font-size-lg: $font-size-base * 1.25;
 $font-size-xl: $font-size-base * 1.5;
+$svg-icon-base: 1;
 
 // Page Settings
 $body-color: $secondary;
@@ -140,9 +141,17 @@ $badge-color: $secondary-light;
 $badge-bg: $primary;
 $badge-font-weight: $font-weight-bolder;
 
-// Lead
+// Lead Text
 $lead-color: $secondary-light;
 $lead-font-weight: $font-weight-normal;
+
+// Text Font Size
+$subtitle-font-size: $font-size-sm;
+$subtitle-color: $neutral-dark;
+$text-font-size: $font-size-base;
+$text-color: $secondary;
+$text-link-font-size: $font-size-base;
+$text-link-color: $secondary-light;
 
 /* Bootstrap */
 @import '../../scss/bootstrap.scss';
@@ -165,6 +174,7 @@ $lead-font-weight: $font-weight-normal;
 @import './components/label.scss';
 @import './components/badge.scss';
 // @import './components/icon.scss';
+@import './components/svg-icon.scss';
 // @import './components/media.scss';
 // @import './components/table.scss';
 @import './components/calendly-widget.scss';

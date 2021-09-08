@@ -11,6 +11,10 @@ section {
 	display: block;
 }
 
+ul li{
+    list-style-type: none;
+}
+
 .overflow-visible {
 	overflow: visible !important;
 }

@@ -128,12 +128,9 @@ button.hover-effect:hover {
 	color: rgba($secondary, .45);
 }
 
-.icon-tabler {
-	transform: scale(1.25);
-}
-
-@media only screen and (max-width: 768px) {
-	.icon-tabler {
-		transform: scale(1);
-	}
+.list-group .list-group-item div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
