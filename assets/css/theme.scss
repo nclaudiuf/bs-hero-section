@@ -48,20 +48,29 @@ $border-radius-lg: .5rem;
 	--neutral-dark: #a3a3a3;
 	--neutral: #cccccc;
 	--neutral-light: #e5e5e5;
-	--white: #fff;
 	--light: #fbfcfd;
 	--dark: #121212;
 	--primary: #ffd717;
 	--primary-light: #ffdc34;
 	--secondary: #313131;
 	--secondary-light: #5a5a5a;
+	--success: #14b777;
+	--info: #17a2b8;
+	--danger: #f46363;
+	--blue: #305edb;
+	--indigo: #2f20ed;
 }
 
 $primary: #ffd717;
+$primary-light: #ffdc34;
 $secondary: #313131;
+$secondary-light: #5a5a5a;
 $success: #14b777;
 $dark: #121212;
 $light: #fbfcfd;
+$neutral: #cccccc;
+$neutral-light: #e5e5e5;
+$neutral-dark: #a3a3a3;
 $info: #17a2b8;
 $danger: #f46363;
 $blue: #305edb;
@@ -126,6 +135,11 @@ $navbar-light-color: $secondary;
 $navbar-light-hover-color: $primary;
 $navbar-toggler-font-weight: $font-weight-normal;
 
+// Badge
+$badge-color: $secondary-light;
+$badge-bg: $primary;
+$badge-font-weight: $font-weight-bolder;
+
 
 @import '../../scss/bootstrap.scss';
 
@@ -145,6 +159,7 @@ $navbar-toggler-font-weight: $font-weight-normal;
 @import './components/navbar.scss';
 // @import './components/footer.scss';
 @import './components/label.scss';
+@import './components/badge.scss';
 // @import './components/icon.scss';
 // @import './components/media.scss';
 // @import './components/table.scss';

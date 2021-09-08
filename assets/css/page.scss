@@ -129,13 +129,11 @@ button.hover-effect:hover {
 }
 
 .icon-tabler {
-	width: 32px;
-	height: 32px;
+	transform: scale(1.25);
 }
 
 @media only screen and (max-width: 768px) {
 	.icon-tabler {
-		width: 16px;
-		height: 16px;
+		transform: scale(1);
 	}
 }

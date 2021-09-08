@@ -11,12 +11,6 @@
 	border-color: transparent;
 }
 
-.nav-link[data-toggle='collapse'] > .icon {
-	transform: rotateZ(-90deg);
-	position: relative;
-	right: 0.25rem;
-}
-
 .navbar-nav .dropdown ul li:hover {
 	background-color: $light;
 }
@@ -38,6 +32,19 @@
 	.navbar-light .navbar-toggler-icon {
 		background: none;
 	}
+}
+
+.navbar-toggler .navbar-toggler-icon i {
+	display: inline-block;
+}
+.navbar-toggler.collapsed .navbar-toggler-icon {
+	background-image: url('https://res.cloudinary.com/dwddqgedw/image/upload/v1630220486/Icons/menu-right_rlswbd.svg');
+}
+.navbar-toggler.collapsed .navbar-toggler-icon:focus {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
 }
 
 .navbar-toggler {
