@@ -121,7 +121,7 @@ $btn-padding-y-lg: $input-btn-padding-y-lg;
 $btn-padding-x-lg: $input-btn-padding-x-lg;
 $btn-font-weight: 500;
 $btn-letter-spacing: $font-size-base * .125;
-$btn-word-spacing: $spacer / 4;
+$btn-word-spacing: math.div($spacer, 4);
 
 // Navbar
 $navbar-toggler-focus-width: 88%;
